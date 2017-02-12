@@ -7,6 +7,7 @@ class TestMadLib < Minitest::Test
     end
 
     def questions
+      []
     end
   end
 
@@ -15,5 +16,12 @@ class TestMadLib < Minitest::Test
 
     assert(1, mad_lib.questions)
   end
+
+  def test_count_of_questions
+    mad_lib = MadLib.new
+
+    assert_equal(2, mad_lib.questions.count)
+  end
+
 end
 
