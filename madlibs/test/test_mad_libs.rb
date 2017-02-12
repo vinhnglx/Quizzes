@@ -12,6 +12,10 @@ class TestMadLib < Minitest::Test
         "question_2"
       ]
     end
+
+    def display
+      "question_1"
+    end
   end
 
   def test_init_questions
@@ -24,6 +28,12 @@ class TestMadLib < Minitest::Test
     mad_lib = MadLib.new
 
     assert_equal(2, mad_lib.questions.count)
+  end
+
+  def test_display_question
+    mad_lib = MadLib.new
+
+    assert_equal("question_1", mad_lib.display)
   end
 
 end
