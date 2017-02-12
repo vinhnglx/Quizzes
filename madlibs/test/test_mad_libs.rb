@@ -7,7 +7,10 @@ class TestMadLib < Minitest::Test
     end
 
     def questions
-      []
+      [
+        "question_1",
+        "question_2"
+      ]
     end
   end
 
