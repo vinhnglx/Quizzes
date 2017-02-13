@@ -9,6 +9,6 @@ class MadLib
   end
 
   def display
-    questions.data.first.content
+    questions.sample.content
   end
 end

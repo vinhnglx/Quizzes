@@ -10,7 +10,7 @@ class TestMadLibs < MiniTest::Test
                   ]
                 )
 
-    mad_libs = MadLib.new(questions)
+    mad_libs = MadLib.new(questions.data)
 
     question = mad_libs.display
 
