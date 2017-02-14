@@ -3,4 +3,8 @@ class Question
   def initialize(content: content)
     @content = content
   end
+
+  def place_holders
+    [1]
+  end
 end
