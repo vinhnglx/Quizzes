@@ -1,5 +1,4 @@
 require 'mad_libs/question'
-require 'mad_libs/question_collection'
 
 class InCorrectAnswer < StandardError
 end
