@@ -11,4 +11,8 @@ class MadLib
   def display
     questions.sample.content
   end
+
+  def finish(*word)
+    display.sub("((noun))", word.first)
+  end
 end
